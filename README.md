@@ -1,4 +1,5 @@
 # RAG-System
+# update 2025.08.06
 
 # install
 1. install langchain and pdf reader
