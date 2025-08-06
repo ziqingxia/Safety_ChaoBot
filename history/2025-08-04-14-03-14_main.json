@@ -1,0 +1,17 @@
+[
+    {
+        "role": "system",
+        "content": "\nYeerare a strict yet supportive conversational rainer for safety-critical railway communication. You will guide the user throughrole-based radio communication training based on a specified Event.\n",
+        "model": "gpt-4o"
+    },
+    {
+        "role": "user",
+        "content": "\nYou are a radio communication training AI. Your role is to guide the user through a radio communication training based on a specified Event.\n\nThe current event is \"Report Emergency\". The description of event is \"You are the Train Operator of Car 09, currently driving along the depot track. While approaching Track Sierra One East, you observe a serious rail crack near Point 833. This is an emergency situation and must be reported immediately.\". Your role is \"Depot 0\". The role of user is \"Car 09\".\n\nThe learning objectives of the event is \"['How to report an emergency', 'Practice Read Back of critical instructions']\".\n\nPlease briefly introduce the learning objectives, the description of the event, and the role of the user and you.\n\n",
+        "model": "gpt-4o"
+    },
+    {
+        "role": "assistant",
+        "content": "Welcome to the Radio Communication Training session focused on the \"Report Emergency\" event. In this scenario, you are taking on the role of the Train Operator for Car 09. Your task is to navigate along the depot track, and while doing so, you have identified a serious rail crack near Point 833, which constitutes an emergency situation that requires immediate reporting.\n\nThe learning objectives for this training are twofold: \n1. To understand and practice how to effectively report an emergency situation.\n2. To practice the read-back of critical instructions to ensure clear and accurate communication.\n\nAs the Train Operator of Car 09, your responsibility is to promptly report the emergency to Depot 0, which is my role in this scenario. I will guide you through the process, ensuring that you follow the correct protocol and communication procedures.\n\nLet's begin by focusing on how to report the emergency situation effectively. Please proceed with your initial communication.",
+        "model": "gpt-4o"
+    }
+]

@@ -1,0 +1,33 @@
+# all configs
+
+API_KEY: "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"
+#"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"
+
+MODEL_TYPES:
+  PDF_ANALYZE_MODEL: "gpt-4o" #"gpt-4o-mini"
+  TEXT_EMBED_MODEL: "text-embedding-3-large"
+  QA_MODEL: "gpt-4o"
+
+DATABASE:
+  ROOT_PATH: "/home/ziqing/projects/RAG-System/database"
+  OVERLAP_LENGTH: 10       # number of overlap words when split a long sentence into multiple sentences
+  TEXT_LENGTH: 100         # total number of words for each searchable sentence
+
+DICTIONARY:
+  ROOT_PATH: "/home/ziqing/projects/RAG-System/dictionary"
+
+SEARCH:
+  TOPK: 5                  # search top k items from the RAG database
+  THRESHOLD: 0.3           # add threshold, if cosine similarity score is less than threshold, won't be selected even if it's topk
+  DISPLAY_LENGTH: 100      # how many characters you want to display for search results. (only for visualization, in model response still use all searched contents)
+
+IN_CONTEXT:
+  EXAMPLE_PATH: "/home/ziqing/projects/RAG-System/samples/conversations.json"
+  NUM_SAMPLES: 1           # number of few-shot examples
+
+CHATBOT:
+  HISTORY_PATH: "/home/ziqing/projects/RAG-System/history"
+
+REFINE_KNOWLEDGE:
+  PHRASE_PATH: "/home/ziqing/projects/RAG-System/dictionary"
+  PHRASE_NAME: ["Common_Catch_Phrases", "Catch_Phrases-List_A1", "Alphabet"]

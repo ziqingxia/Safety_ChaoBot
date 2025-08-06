@@ -1,0 +1,17 @@
+[
+    {
+        "role": "system",
+        "content": "\nYeerare a strict yet supportive conversational rainer for safety-critical railway communication. You will guide the user throughrole-based radio communication training based on a specified Event.\n",
+        "model": "gpt-4o"
+    },
+    {
+        "role": "user",
+        "content": "\nYou are a radio communication training AI. Your role is to guide the user through a radio communication training based on a specified Event.\n\nThe current event is \"Report Emergency\". The description of event is \"You are the Train Operator of Car 09, currently driving along the depot track. While approaching Track Sierra One East, you observe a serious rail crack near Point 833. This is an emergency situation and must be reported immediately.\". Your role is \"Depot 0\". The role of user is \"Car 09\".\n\nThe learning objectives of the event is \"['How to report an emergency', 'Practice Read Back of critical instructions']\".\n\nPlease briefly introduce the learning objectives, the description of the event, and the role of the user and you.\n\n",
+        "model": "gpt-4o"
+    },
+    {
+        "role": "assistant",
+        "content": "Welcome to the radio communication training session focused on the event \"Report Emergency.\" In this session, we will cover two key learning objectives: how to effectively report an emergency and practice the read-back of critical instructions. \n\n**Event Description:** You are the Train Operator of Car 09, currently driving along the depot track. While approaching Track Sierra One East, you observe a serious rail crack near Point 833. This is an emergency situation and must be reported immediately.\n\n**Your Role:** I am \"Depot 0,\" responsible for receiving emergency reports and coordinating the necessary response actions.\n\n**Your Role:** You are \"Car 09,\" the Train Operator tasked with identifying and reporting emergency situations you encounter on the track.\n\nLet's proceed with the training, where you will practice reporting the observed emergency situation.",
+        "model": "gpt-4o"
+    }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "event": "User radio check with OCC",
+    "description": "TPO Tan conducts Radio Check with Traffic Controller using Individual Call. ( TPO Tan activates the TETRA radio number of TC…....)",
+    "conversation": [
+      {
+        "users": "TPO Tan",
+        "utterance": " …**//..  unrecognised chatter "
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Main Line Zero One, Send over"
+      },
+      {
+        "users": "TPO Tan",
+        "utterance": "TPO Tan, Radio Check, over."
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Main Line Zero One, Radio Check loud and clear, over."
+      },
+      {
+        "users": "TPO Tan",
+        "utterance": "TPO Tan, Radio Check OK, out."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "event": "User radio check with one another person (one another)",
+    "description": "TPO Tan conducts Radio Check with his Partner, Mr Rajoo using Group Call. ( TPO Tan selects the appropriate Group Channel, press the PTT button …..)",
+    "conversation": [
+      {
+        "users": "TPO Tan",
+        "utterance": "Rajoo, this is TPO Tan message, over."
+      },
+      {
+        "users": "Rajoo",
+        "utterance": "Rajoo, send, over."
+      },
+      {
+        "users": "TPO Tan",
+        "utterance": "TPO Tan, Radio Check, over."
+      },
+      {
+        "users": "Rajoo",
+        "utterance": "TRajoo, Radio Check OK, over."
+      },
+      {
+        "users": "TPO Tan",
+        "utterance": "TPO Tan, Radio Check OK. out."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "event": "User request for Track Access from TC",
+    "description": "TPO Kevin calls TC to request for Track Access using Individual Calls ( TC responded on Main Line Zero Two); and in this case request is denied, as OCS is still live.",
+    "conversation": [
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Send, over"
+      },
+      {
+        "users": "TPO Kevin",
+        "utterance": "TPO Kevin, Can I access the tracks, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Negative. OCS is still live, over"
+      },
+      {
+        "users": "TPO Kevin",
+        "utterance": "TPO Kevin, Wilco, out"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "event": "User request for Access to Depot Wash Plant Track.",
+    "description": "TPO Loh calls Depot TC to request for Track Access  ( TPO Loh activates the TETRA radio number of DTC....)",
+    "conversation": [
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, Send, over"
+      },
+      {
+        "users": "TPO Loh",
+        "utterance": "TPO Loh, request access to Daily Wash Track, over"
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, Negative. There is a train at that track. Do not access. Read Back Message, over"
+      },
+      {
+        "users": "TPO Loh",
+        "utterance": "TPO Loh, I Read Back your Message, there is a train at the Daily Wash track. I am not allowed to access, over"
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, correct, over"
+      },
+      {
+        "users": "TPO Loh",
+        "utterance": "TPO Loh, Roger, out"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "event": "User receiving TOA from TC",
+    "description": "TC calls TPO Ali to issue TOA Number. ( TC activates the TETRA radio number of TPO ALI....)",
+    "conversation": [
+      {
+        "users": "TPO Ali",
+        "utterance": "TPO Ali, is TOA ready?send, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, are you ready for your TOA, over"
+      },
+      {
+        "users": "TPO Ali",
+        "utterance": "TPO Ali, I am ready for my TOA, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, your TOA number is 2008-00256, over"
+      },
+      {
+        "users": "TPO Ali",
+        "utterance": "TPO Ali, my TOA number is 2008-00256, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, that is correct. TOA issued time is 0115. Call Back time is 0415 hrs over"
+      },
+      {
+        "users": "TPO Ali",
+        "utterance": "TPO Ali, I read back, TOA issued time is 0115 hrs. And Call Back time is 0415 hrs, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, positive, you may proceed with your work, over"
+      },
+      {
+        "users": "TPO Ali",
+        "utterance": "TPO Ali, Roger out"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "event": "TPO calls TC to surrender his TOA.",
+    "description": "TPO Ho calls TC to surrender his TOA after completion of work. (Non Traffic Hours Track Access and TPO Ho activates the TETRA radio number of TC…....)",
+    "conversation": [
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Send, over"
+      },
+      {
+        "users": "TPO Ho",
+        "utterance": "TPO Ho, I have completed my work and want to surrender my TOA, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, please proceed with your Line Clear message, over"
+      },
+      {
+        "users": "TPO Ho",
+        "utterance": "TPO Ho, All staff, material and equipment are off the track and tunnel and it is safe for train to run. I surrender my TOA 2020-00257, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Line Clear Message Acknowledged, TOA 2020-00257 surrendered at 0415 hrs, over"
+      },
+      {
+        "users": "TPO Ho",
+        "utterance": "TPO Ho, TOA surrendered at 0415 hrs, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, that is correct, out"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "event": "Radio calls to TC to report fault.",
+    "description": "PGL(station) SM (Station Manager) calls TC to report PSD fault using Individual Call. (PGL ASM activates the TETRA radio number of TC…....)",
+    "conversation": [
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Send over"
+      },
+      {
+        "users": "PGL",
+        "utterance": "PGL SM Goh, South Bound Platform PSD number four is observed closing very slowly, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, please confirm SouthBound Platform PSD number four is closing very slowly, over"
+      },
+      {
+        "users": "PGL",
+        "utterance": "PGL SM Goh, that is correct over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, monitor PSD operation for the next two trains and feedback situation over"
+      },
+      {
+        "users": "PGL",
+        "utterance": "PGL SM Goh, Wilco, out"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "event": "Signal Technician calls TC to Confirm Point Position on GWS signalling system.",
+    "description": "Signal Technician, TPO Ong, calls TC to confirm Point Machine Detection on GWS after Point Machine repair. ( TPO Ong activates the TETRA radio number of TC…....)",
+    "conversation": [
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, send over."
+      },
+      {
+        "users": "TPO Ong",
+        "utterance": "TPO Ong, please confirm the position of Point 701 on your GWS over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, Point 701 is at Normal position on my GWS. over"
+      },
+      {
+        "users": "TPO Ong",
+        "utterance": "TPO Ong, Point 701 is at Reverse position on your GWS over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, Negative. I Say Again. Point 701 is at Normal position on my GWS over"
+      },
+      {
+        "users": "TPO Ong",
+        "utterance": "TPO Ong, Point 701 is at Normal position on your GWS over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, that is correct, over"
+      },
+      {
+        "users": "TPO Ong",
+        "utterance": "TPO Ong, I request to set Point 701 to Manual Mode, over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, you are authorised to set Point 701 to Manual mode, over"
+      },
+      {
+        "users": "TPO Ong",
+        "utterance": "TPO Ong, Point 701 set to Manual Mode now. Nothing further, out"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "event": "Depot TC Calls to inform SPKS Removal",
+    "description": "Depot TC calls TPO Ng to inform SPKS has been removed. ( DTC activates the TETRA radio number of TPO Ng....)",
+    "conversation": [
+      {
+        "users": "TPO Ng",
+        "utterance": "TPO Ng, send over"
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, SPKS Zone Three is removed at 1001hours, over"
+      },
+      {
+        "users": "TPO Ng",
+        "utterance": "TPO Ng, I read back, SPKS Zone Three is removed at 1001 hours, over"
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, that is correct. You may proceed with your work, over"
+      },
+      {
+        "users": "TPO Ng",
+        "utterance": "TPO Ng, Roger, out"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "event": "TPO Calls TC before Removing SPKS SP401 (at PTP North Bound Head Wall)",
+    "description": "P-Way Technician, TPO Zul, calls TC for authorisation to operate SPKS before accessing onto the tracks.( TPO Zul activates the TETRA radio number of TC....)",
+    "conversation": [
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, send over."
+      },
+      {
+        "users": "TPO Zul",
+        "utterance": "TPO Zul, I am at PTP North Bound Head Wall. May I remove SPKS SP 401, over?"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, You may proceed to remove SPKS SP 401 now, over"
+      },
+      {
+        "users": "TPO Zul",
+        "utterance": "TPO Zul, SPKS SP 401 removed, can you confirm SPKS SP 401 removal on your GWS, over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, confirmed SPKS SP 401 removed at 1400 hrs TOA number 2008-00259, Time TOA issued 1402 hrs, over"
+      },
+      {
+        "users": "TPO Zul",
+        "utterance": "TPO Zul, SPKS SP 401 removed at 1400 hrs TOA number 2008-00259, Time TOA issued 1402 hrs, over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, positive, you may proceed with your work, over"
+      },
+      {
+        "users": "TPO Zul",
+        "utterance": "TPO Zul, Roger out"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "event": "TC talk to CSO to impose 20 kph for Tunnel Walkway Procedure",
+    "description": "Traffic Controller (ML 02) imposed 20 kph for tunnel walkway procedure, call CSO Ali (Car 37) to verify Target Speed. ML 02 key in Car 37 Tetra Radio ID and depress PTT, CSO Ali Tetra radio alert sounded ….",
+    "conversation": [
+      {
+        "users": "Car 37",
+        "utterance": "Car 37, send over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Please proceed to the front DT Driving Console, over"
+      },
+      {
+        "users": "Car 37",
+        "utterance": "Car 37, Proceeding now to front DT, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Once you reach the front DT you are authorised to open the Console Cover, over"
+      },
+      {
+        "users": "Car 37",
+        "utterance": "Car 37, Roger, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line 02, nothing further, out"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, send over"
+      },
+      {
+        "users": "Car 37",
+        "utterance": "Car 37, I am now at the front DT, driving console cover opened, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Confirm the Target Speed, over"
+      },
+      {
+        "users": "Car 37",
+        "utterance": "Car 37, The Target Speed is 20 kph, over"
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Main Line Zero Two, Now you can close the driving console cover, over"
+      },
+      {
+        "users": "Car 37",
+        "utterance": "Car 37, Wilco, out"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "event": "Train (Car 45) overrun China Town Station in AM mode, CSO request permission to be authorised to set-back train doors to PSD.",
+    "description": "Train (Car 45) overrun china town station in AM, CSO onboard call Traffic Controller 1 …. CSO key in TC Tetra ID and depress PTT… Traffic Controller 1  radio alert sounded…..",
+    "conversation": [
+      {
+        "control": "ML 01",
+        "utterance": "Main Line Zero One, Send, over"
+      },
+      {
+        "users": "Car 45",
+        "utterance": "Car 45, Overrun CNT South Bound Platform, over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Main Line Zero One, Confirm that the train did not overrun the set-back limit, marker board, over"
+      },
+      {
+        "users": "Car 45",
+        "utterance": "Car 45, Train did not overrun the set-back limit, over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Main Line Zero One, Read Back Message, open the driving console, and you are authorise to change to RMR Romeo Mike Romeo set-back to align train doors with the PSD, over"
+      },
+      {
+        "users": "Car 45",
+        "utterance": "Car 45, I Read Back, Authorised to open driving console cover, change to RMR Romeo Mike Romeo and set-back to align train doors with PSD, over"
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Main Line Zero One, Positive, over"
+      },
+      {
+        "users": "Car 45",
+        "utterance": "Car 45, Roger, out"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "event": "Regular Track Protection Task",
+    "description": "",
+    "conversation": [
+      {
+        "control": "ML 02",
+        "utterance": "Mainline Zero Two, send, over."
+      },
+      {
+        "users": "TPO George",
+        "utterance": "TPO George, we're deployed for track inspection on the northbound track between Sengkang station and Punggol station, over."
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Mainline Zero Two, noted between that you are carrying out track inspection on the northbound track between Sengkang station and Punggol station. Are you in position, over."
+      },
+      {
+        "users": "TPO George",
+        "utterance": "TPO George, positive, currently at Sengkang station, over."
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Mainline Zero Two, roger that, are you ready for your TOA, over."
+      },
+      {
+        "users": "TPO George",
+        "utterance": "TPO George, positive, I am ready for my TOA, over."
+      },
+      {
+        "control": "TPO George",
+        "utterance": "TPO George, my TOA number is 2145-00398, time issued is 0120hrs and call back time is 0415hrs, over."
+      },
+      {
+        "users": "ML 02",
+        "utterance": "Mainline Zero Two, that is correct, you may proceed with your track access, over."
+      },
+      {
+        "users": "TPO George",
+        "utterance": "TPO George, roger out."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "event": "Emergency Situation",
+    "description": "",
+    "conversation": [
+      {
+        "users": "Car 09",
+        "utterance": "Emergency, Emergency, Depot Zero, this is Car Zero Nine at track Sierra One East. Rail crack spotted near point Eight Three Three, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, read back message, stop your train immediately and standby for further instructions, over."
+      },
+      {
+        "users": "Car 09",
+        "utterance": "Car Zero Nine, I read back message, train stopped, standing by for further instructions, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, wait out."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "event": "Passenger on board train requires medical assistance",
+    "description": "",
+    "conversation": [
+      {
+        "users": "CNT ASM Lee",
+        "utterance": "Chinatown ASM Lee, send over."
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, passenger onboard Car One Five approaching your northbound platform PSD Two Four requires assistance, over."
+      },
+      {
+        "users": "CNT ASM Lee",
+        "utterance": "Chinatown ASM Lee, proceeding to my northbound platform PSD Two Four, over."
+      },
+      {
+        "control": "ML 01",
+        "utterance": "Mainline Zero One, roger out."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "event": "Train Movement",
+    "description": "",
+    "conversation": [
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, send over."
+      },
+      {
+        "users": "Car 57",
+        "utterance": "Car Five Seven, ready for movement, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, read back message, route has been set from Sierra Nine west to Hotel Five, over."
+      },
+      {
+        "users": "Car 57",
+        "utterance": "Car Five Seven, I read back message, route has been set from Sierra Nine west to Hotel Five, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, correct, read back message, you are to stop short before change of end marker at Hotel Five, over."
+      },
+      {
+        "users": "Car 57",
+        "utterance": "Car Five Seven, I read back message, I am to stop short before change of end marker at Hotel Five, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, correct, read back message, you are now authorised to put your mode selector to Charlie Mike, over."
+      },
+      {
+        "users": "Car 57",
+        "utterance": "Car Five Seven, I read back message, I am now authorised to put my mode selector to Charlie Mike, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, correct, you may now proceed with your movement in Charlie Mike, over."
+      },
+      {
+        "users": "Car 57",
+        "utterance": "Car Five Seven, wilco out."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "event": "Clarification of message",
+    "description": "",
+    "conversation": [
+      {
+        "control": "ML 02",
+        "utterance": "Mainline Zero Two, send over."
+      },
+      {
+        "users": "HGN SM Devi",
+        "utterance": "Hougang SM Devi, requesting for am......(message distorted), over."
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Mainline Zero Two, difficult, say again your last message, over."
+      },
+      {
+        "users": "HGN SM Devi",
+        "utterance": "Hougang SM Devi, I say again, requesting for ambulance assistance, over."
+      },
+      {
+        "control": "ML 02",
+        "utterance": "Mainline Zero Two, roger, will activate ambulance to your location, over."
+      },
+      {
+        "users": "HGN SM Devi",
+        "utterance": "Hougang SM Devi, roger out."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "event": "TPO requesting for point detection test",
+    "description": "",
+    "conversation": [
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, send over."
+      },
+      {
+        "users": "TPO Jess",
+        "utterance": "TPO Jess, requesting point detection test for point Papa Eight Zero Two, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, all personnel to stand clear away from point, over."
+      },
+      {
+        "users": "TPO Jess",
+        "utterance": "TPO Jess, roger, all personnel are standing clear away from point, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, throwing point Papa Eight Zero Two to Normal position now, over."
+      },
+      {
+        "users": "TPO Jess",
+        "utterance": "TPO Jess, point Papa Eight Zero Two now at Normal position, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, throwing point Papa Eight Zero Two to Reverse position now, over."
+      },
+      {
+        "users": "TPO Jess",
+        "utterance": "TPO Jess, point Papa Eight Zero Two now at Reverse position, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, final throw, throwing point Papa Eight Zero Two to Normal position, over."
+      },
+      {
+        "users": "TPO Jess",
+        "utterance": "TPO Jess, point Papa Eight Zero Two now at Normal position, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, roger, control of point Papa Eight Zero Two handed over back to me at 1350hrs, over."
+      },
+      {
+        "users": "TPO Jess",
+        "utterance": "TPO Jess, control of point Papa Eight Zero Two handed over back to you at 1350hrs, over."
+      },
+      {
+        "control": "Depot 0",
+        "utterance": "Depot Zero, positive, nothing further, out."
+      }
+    ]
+  }
+]
