@@ -11,6 +11,10 @@ class RAGKnowledgeBase():
         self.datanames = []
         self.config = config
         self.client = OpenAI()
+
+        # for web
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        
         for name in database_names:
             database_path = os.path.join(root_path, name, 'contents_with_embed.pth')
             self.add_knowledge(name, database_path)
@@ -19,7 +23,9 @@ class RAGKnowledgeBase():
 
     def add_knowledge(self, name, database_path):
         self.database[name] = torch.load(database_path, weights_only=False)
-        self.database[name]['embedding'] = self.database[name]['embedding'].cuda()
+        # for web
+        # self.database[name]['embedding'] = self.database[name]['embedding'].cuda()
+        self.database[name]['embedding'] = self.database[name]['embedding'].to(self.device)
 
     def remove_knowledge(self, name):
         self.database.pop(name)
@@ -62,7 +68,11 @@ class RAGKnowledgeBase():
     def search_knowledge(self, input, prefix="RAG", topk=5):
         # get input embedding
         input_embed = self.get_embeddings(input)
-        input_embed = torch.FloatTensor(input_embed).unsqueeze(0).cuda()
+        
+        # for web
+        # input_embed = torch.FloatTensor(input_embed).unsqueeze(0).cuda()
+        input_embed = torch.FloatTensor(input_embed).unsqueeze(0).to(self.device)
+        
         # get search parameters
         threshold = self.config['SEARCH']['THRESHOLD']
         display_length = self.config['SEARCH']['DISPLAY_LENGTH']
