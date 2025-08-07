@@ -8,8 +8,8 @@ import re
 import importlib
 
 from chatbot_exp import ChatBot, InvalidAPIKeyError
-# from database import RAGKnowledgeBase
-from database_web import RAGKnowledgeBase
+from database import RAGKnowledgeBase
+# from database_web import RAGKnowledgeBase
 from fewshot_exp import InContextLearner
 
 # Page configuration
