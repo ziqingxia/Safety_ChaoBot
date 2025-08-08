@@ -4,7 +4,8 @@ import argparse
 from openai import OpenAI
 
 from chatbot_exp import ChatBot
-from database import RAGKnowledgeBase
+# from database import RAGKnowledgeBase
+from database_web import RAGKnowledgeBase
 from fewshot_exp import InContextLearner
 
 
